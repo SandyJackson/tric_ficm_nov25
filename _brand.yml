@@ -1,0 +1,141 @@
+meta:
+  name: NIHR Southampton BRC (Biomedical Research Centre)
+  link: https://www.southamptonbrc.nihr.ac.uk/
+
+logo:
+  images:
+    logo-light:
+      path: images/brc-logo-light.png
+      alt: "BRC Logo"
+    logo-dark:
+      path: images/brc-logo-dark.png
+      alt: "BRC Logo (light version)"
+  small:
+    light: logo-light
+    dark: logo-dark
+  medium:
+    light: logo-light
+    dark: logo-dark
+  large:
+    light: logo-light
+    dark: logo-dark
+
+color:
+  palette:
+    navy: "#193e72"
+    coral: "#e95d4e"
+    teal: "#2da9b0"
+    slate: "#5B7395"
+    light-pink: "#fbdfdc"
+    light-cyan: "#d5eeef"
+    light-gray: "#d1d8e2"
+    body-text: "#2c2c2c"
+
+  foreground: body-text
+  background: white
+  primary: navy
+  secondary: coral
+  info: teal
+  tertiary: slate
+  light: light-gray
+  dark: navy
+
+typography:
+  fonts:
+    - family: Inter
+      source: google
+      weight: [400, 500, 600, 700]
+    - family: JetBrains Mono
+      source: google
+      weight: [400, 500, 600]
+
+  base:
+    family: Inter
+    weight: 400
+
+  headings:
+    family: Inter
+    weight: 600
+    color: navy
+
+  monospace: JetBrains Mono
+
+  monospace-inline:
+    family: JetBrains Mono
+    color: teal
+    background-color: light-cyan
+
+  monospace-block:
+    family: JetBrains Mono
+    background-color: light-cyan
+
+defaults:
+  bootstrap:
+    defaults:
+      navbar-fg: white
+    rules: |
+      /* Navbar styling */
+      .navbar {
+        border-bottom: 3px solid $brand-coral !important;
+      }
+
+      /* Navbar brand/logo/title - always white */
+      .navbar-brand,
+      .navbar-brand:hover,
+      .navbar-brand:focus {
+        color: #ffffff !important;
+        text-decoration: none;
+      }
+
+      /* Nav links - active state (coral) */
+      .navbar .navbar-nav .nav-link.active,
+      .navbar .navbar-nav .nav-link.show,
+      .navbar .navbar-nav .active > .nav-link {
+        color: $brand-coral !important;
+        font-weight: 600;
+      }
+
+      /* Nav links - hover state (teal) */
+      .navbar .navbar-nav .nav-link:hover,
+      .navbar .navbar-nav .nav-link:focus {
+        color: $brand-coral !important;
+      }
+
+      /* Content panels */
+      .content-panel {
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(25, 62, 114, 0.1);
+        border-left: 4px solid $brand-teal;
+        border-radius: 6px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        box-shadow: 0 2px 8px rgba(25, 62, 114, 0.05);
+        transition: all 0.2s ease;
+      }
+
+      .content-panel:hover {
+        border-left-color: $brand-coral;
+        box-shadow: 0 4px 12px rgba(25, 62, 114, 0.1);
+      }
+
+      .content-panel h3 {
+        margin-top: 0;
+        color: #193e72;
+      }
+
+      .content-panel a {
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .content-panel a:hover {
+        text-decoration: underline;
+      }
+
+      /* H2 styling */
+      h2 {
+        border-bottom: 2px solid $brand-teal;
+        padding-bottom: 0.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }

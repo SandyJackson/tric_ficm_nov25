@@ -1,0 +1,310 @@
+/*-- scss:defaults --*/
+
+// RevealJS-specific overrides for _brand.yml
+$body-bg: #fbdfdc !default;
+$presentation-font-size-root: 32px !default;
+$presentation-font-smaller: 0.7 !default;
+$presentation-line-height: 1.2 !default;
+
+$presentation-h1-font-size: 2em !default;
+$presentation-h2-font-size: 1.4em !default;
+$presentation-h3-font-size: 1.2em !default;
+$presentation-h4-font-size: 1em !default;
+
+$presentation-heading-line-height: 1.2 !default;
+$presentation-heading-letter-spacing: -0.02em !default;
+$presentation-heading-font-weight: 800 !default;
+
+$presentation-block-margin: 16px !default;
+$presentation-slide-text-align: left !default;
+
+$border-radius: 4px !default;
+$right-arrow: "\2192";
+
+/*-- scss:rules --*/
+
+.reveal {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.reveal h2 {
+  border-bottom: 2px solid $brand-navy;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.reveal h3 {
+  border-bottom: 1px solid rgba($brand-teal, 0.2);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.reveal strong {
+  color: $brand-navy;
+}
+
+.content-panel {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba($brand-navy, 0.08);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba($brand-navy, 0.05);
+}
+
+.container-coral {
+  display: block !important;
+  width: 85% !important;
+  margin-bottom: 1.5rem;
+  background-color: rgba($brand-coral, 0.2);
+  border-left: 3px solid $brand-coral;
+  padding: 1rem 0.5rem;
+  border-radius: $border-radius;
+}
+
+.container-teal {
+  display: block !important;
+  width: 85% !important;
+  margin-bottom: 1.5rem;
+  background-color: rgba($brand-teal, 0.2);
+  border-left: 3px solid $brand-teal;
+  padding: 1rem 3rem;
+  border-radius: $border-radius;
+}
+
+.reveal pre {
+  background-color: $brand-light-cyan;
+  border-left: 4px solid $brand-teal;
+  border-radius: $border-radius;
+
+  code {
+    background-color: transparent;
+    padding: 1em 1em;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &.sourceCode {
+    padding: 1em 1em;
+  }
+}
+
+.reveal code {
+  color: $brand-teal;
+  background-color: $brand-light-cyan;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.reveal .smallest{
+ font-size: 0.5em; 
+}
+.dark-accent {
+  background-color: $brand-navy !important;
+  color: white !important;
+  padding: 2rem !important;
+  border-radius: $border-radius;
+  margin: $presentation-block-margin 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+  }
+
+  a {
+    color: lighten($brand-coral, 15%) !important;
+
+    &:hover {
+      color: lighten($brand-coral, 25%) !important;
+    }
+  }
+
+  code {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: lighten($brand-teal, 20%);
+  }
+}
+
+.reveal .slides section.dark-slide {
+  background-color: $brand-navy;
+  color: white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+
+  a {
+    color: lighten($brand-coral, 15%);
+
+    &:hover {
+      color: lighten($brand-coral, 25%);
+    }
+  }
+}
+
+.reveal .callout {
+  border-radius: $border-radius;
+
+  &.callout-important {
+    background-color: lighten($brand-light-pink, 5%);
+    border-color: $brand-coral !important;
+  }
+
+  &.callout-note {
+    background-color: lighten($brand-light-cyan, 5%);
+    border-color: $brand-teal !important;
+  }
+}
+
+.reveal a {
+  transition: color 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+.btn-primary, .reveal .btn-primary {
+  background-color: $brand-coral;
+  border-color: $brand-coral;
+  color: white;
+
+  &:hover {
+    background-color: darken($brand-coral, 10%);
+    border-color: darken($brand-coral, 10%);
+  }
+}
+
+.reveal ul {
+  font-weight: lighter;
+  padding-left: 16px;
+
+  li::marker {
+    color: mix($brand-coral, white, 70%);
+  }
+}
+
+.reveal ul ul {
+  list-style: none;
+
+  li:before {
+    content: $right-arrow;
+    color: mix($brand-coral, white, 60%);
+    font-weight: 400;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
+  }
+}
+
+.reveal ol {
+  font-weight: lighter;
+  padding-left: 16px;
+
+  li::marker {
+    color: $brand-coral;
+  }
+}
+
+.reveal blockquote {
+  border-left: 4px solid $brand-teal;
+  background-color: lighten($brand-light-cyan, 5%);
+  color: $brand-body-text;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  margin: $presentation-block-margin 0;
+  border-radius: 0 $border-radius $border-radius 0;
+}
+
+.reveal table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  th {
+    background-color: $brand-navy;
+    color: white;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) {
+    background-color: lighten($brand-light-gray, 8%);
+  }
+}
+
+// Scattered wave logo grid
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5rem 0.4rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+
+  // Offset pattern - alternating rows
+  .logo-item {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(4n+1),
+    &:nth-child(4n+2),
+    &:nth-child(4n+3),
+    &:nth-child(4n+4) {
+      grid-column: span 1;
+    }
+
+    // Row 1: normal positions
+    &:nth-child(1) { grid-column: 1; grid-row: 1; }
+    &:nth-child(2) { grid-column: 2; grid-row: 1; }
+    &:nth-child(3) { grid-column: 3; grid-row: 1; }
+    &:nth-child(4) { grid-column: 4; grid-row: 1; }
+
+    // Row 2: offset by half column
+    &:nth-child(5) { grid-column: 1; grid-row: 2; transform: translateX(25%); }
+    &:nth-child(6) { grid-column: 2; grid-row: 2; transform: translateX(25%); }
+    &:nth-child(7) { grid-column: 3; grid-row: 2; transform: translateX(25%); }
+    &:nth-child(8) { grid-column: 4; grid-row: 2; transform: translateX(25%); }
+
+    // Row 3: normal positions
+    &:nth-child(9) { grid-column: 1; grid-row: 3; }
+    &:nth-child(10) { grid-column: 2; grid-row: 3; }
+    &:nth-child(11) { grid-column: 3; grid-row: 3; }
+    &:nth-child(12) { grid-column: 4; grid-row: 3; }
+
+    // Row 4: offset by half column
+    &:nth-child(13) { grid-column: 1; grid-row: 4; transform: translateX(25%); }
+    &:nth-child(14) { grid-column: 2; grid-row: 4; transform: translateX(25%); }
+    &:nth-child(15) { grid-column: 3; grid-row: 4; transform: translateX(25%); }
+    &:nth-child(16) { grid-column: 4; grid-row: 4; transform: translateX(25%); }
+  }
+
+  img {
+    min-height: 50px;
+    max-height: 90px;
+    min-width: 80px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0%);
+    opacity: 0.95;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      filter: drop-shadow(0 4px 8px rgba($brand-navy, 0.2));
+    }
+  }
+}

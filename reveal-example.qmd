@@ -1,0 +1,162 @@
+---
+title: "BRC Theme Test"
+subtitle: "Testing the new modern medical theme"
+author: Dr Sandy (Alexander) Jackson
+author-title: NIHR Doctoral Fellow, University of Southampton
+email: alexander.jackson@soton.ac.uk
+institute: University of Southampton
+date: today
+date-format: MMMM YYYY
+format:
+    revealjs:
+        slide-number: true
+        footer: 'BRC Theme Demo'
+        navigation-mode: vertical
+        transition: slide
+        transition-speed: slow
+revealjs-plugins:
+  - pointer
+---
+
+# Typography Test
+
+## Standard Headers Work Great
+
+:::{.content-panel}
+This is regular paragraph text using Inter font. It should be clear and readable.
+
+### Level 3 Header
+#### Level 4 Header
+
+**Bold text** and *italic text* and [links](https://example.com) should use the navy brand color.
+:::
+
+# Code Examples {.dark-slide}
+
+This is a dark section break slide using the navy background.
+
+## Test a slide bg {background-color="aquamarine"}
+
+## Code Block Testing {.smaller}
+
+::: {.test}
+Here's some Python code with JetBrains Mono font:
+
+```python
+def calculate_risk_score(patient_data):
+    """
+    Calculate medical risk score
+    """
+    score = 0
+    for factor in patient_data['risk_factors']:
+        score += factor.weight * factor.value
+    return min(score, 100)
+
+# Example usage
+patient = {'risk_factors': [...]}
+risk = calculate_risk_score(patient)
+```
+
+Inline code looks like this: `import pandas as pd` and should have teal theming.
+:::
+
+## Callout Examples
+
+::: {.callout-note}
+## Note Callout
+This is a standard note callout with teal theming.
+:::
+
+::: {.callout-important}
+## Important Information
+This uses coral theming for important callouts.
+:::
+
+::: {.callout-tip}
+## tip Information
+This is a dark emphasis callout for maximum impact.
+:::
+
+## Lists and Structure
+
+:::{.container-teal}
+- Medical research findings
+- Statistical analysis results
+- Patient outcome data
+  - Sub-item with details
+  - Another important point
+- Recommendations
+:::
+
+## Numbered
+:::: {.columns}
+
+::: {.column width="40%"}
+::: {.container-coral}
+1. First recommendation
+2. Second key finding
+3. Future research directions
+:::
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+
+## Dark Accent Section
+
+::: {.dark-accent}
+## Key Findings
+
+This section has a **dark navy background** for emphasis.
+
+- Critical result #1
+- Important finding #2
+- [Link to further details](https://example.com)
+
+```r
+# R code in dark section
+lm(outcome ~ treatment + age, data = study_data)
+```
+:::
+
+## Next slide
+
+Regular content continues here with normal styling.
+
+## Tables and Data
+
+| Treatment | N | Mean | 95% CI |
+|-----------|---|------|--------|
+| Control | 45 | 2.3 | 1.8-2.8 |
+| Intervention | 48 | 3.1 | 2.7-3.5 |
+| Placebo | 42 | 1.9 | 1.4-2.4 |
+
+---
+
+## Blockquote Example
+
+> "The integration of technology in healthcare represents a fundamental shift in how we approach patient care and medical research."
+>
+> — Medical Technology Report, 2024
+
+## Interactive Elements
+
+Here are some example buttons and interactive elements:
+
+<button class="btn-primary">Primary Action</button>
+
+[Standard Link](https://example.com) | [Another Link](https://example.com)
+
+# Thank You {.dark-slide}
+
+## Questions & Discussion
+
+**Contact Information:**
+
+- Email: alexander.jackson@soton.ac.uk
+- Research: [University Profile](https://example.com)
+
+*This presentation was created using the BRC modern medical theme.*

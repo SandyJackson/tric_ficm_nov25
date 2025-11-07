@@ -1,0 +1,12 @@
+.reveal .slide-logo {
+  height: 50px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+/* Navbar logo sizing */
+.navbar-logo {
+  height: 60px !important; /* Adjust size as needed */
+  max-height: unset !important;
+  width: auto !important;
+}

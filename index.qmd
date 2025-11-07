@@ -1,0 +1,33 @@
+---
+title: "Website template"
+subtitle: "Subtitle"
+author: Dr Sandy (Alexander) Jackson
+format:
+  html:
+    toc: false
+---
+
+## Presentations
+
+::: {.content-panel style="margin: 2rem 0;"}
+
+### [Document  1](./html_example.qmd)
+
+Document example
+
+:::
+
+::: {.content-panel style="margin: 2rem 0;"}
+
+### [Document 2](./reveal-example.qmd)
+
+Theme test
+
+:::
+
+---
+
+## Contact Information
+
+* **Email**: alexander.jackson@soton.ac.uk
+* **ORCiD**: [0000-0002-3153-9231](https://orcid.org/0000-0002-3153-9231)

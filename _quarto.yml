@@ -1,0 +1,32 @@
+project:
+  type: website
+  title: "Project Title Here"
+  # For GitHub Pages compatability
+  output-dir: docs
+  render:
+    - "*.qmd"
+
+website:
+  title: "Website title here"
+  navbar:
+    title: false
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "First document"
+        href: html_example.qmd
+      - text: "Second document"
+        href: reveal-example.qmd
+
+format:
+  html:
+    theme: [default, brand]
+    css: style/style.css
+  revealjs:
+    theme: [default, brand, style/brc-revealjs-overrides.scss]
+    brand-mode: dark
+    css: style/style.css
+    template-partials:
+      - style/title-slide.html
+    multiplex:
+      url: "https://multiplex.up.railway.app/"
