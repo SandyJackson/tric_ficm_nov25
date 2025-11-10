@@ -1,6 +1,6 @@
 ---
-title: "Website template"
-subtitle: "Subtitle"
+title: "TRIC Network Workshop"
+subtitle: "FICM Intensivists in Training"
 author: Dr Sandy (Alexander) Jackson
 format:
   html:
@@ -11,17 +11,25 @@ format:
 
 ::: {.content-panel style="margin: 2rem 0;"}
 
-### [Document  1](./html_example.qmd)
+### [The Good, The Bad and The Necessary](./good_bad_nec.qmd)
 
-Document example
+Talk on AI across the research life cycle
 
 :::
 
 ::: {.content-panel style="margin: 2rem 0;"}
 
-### [Document 2](./reveal-example.qmd)
+### [A look under the hood](./under_the_hood.qmd)
 
-Theme test
+Gain some understanding and (hopefully) intuition how _how_ AI systems work and how to appraise them.
+
+:::
+
+::: {.content-panel style="margin: 2rem 0;"}
+
+### [From vibes to context engineering](./vibes_to_engineer.qmd)
+
+How LLM's have changed over the last few years and how to use them more effectively.
 
 :::
 

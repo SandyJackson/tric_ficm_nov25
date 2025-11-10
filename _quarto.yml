@@ -1,23 +1,23 @@
 project:
   type: website
-  title: "Project Title Here"
-  # For GitHub Pages compatability
+  title: "FICM Intensivists in Training"
+  # For GitHub Pages compatibility
   output-dir: docs
   render:
     - "*.qmd"
-
 website:
-  title: "Website title here"
+  title: "FICM Intensivists in Training"
   navbar:
     title: false
     left:
       - text: "Home"
         href: index.qmd
-      - text: "First document"
-        href: html_example.qmd
-      - text: "Second document"
-        href: reveal-example.qmd
-
+      - text: "The Good, The Bad and The Necessary"
+        href: good_bad_nec.qmd
+      - text: "A look under the hood"
+        href: under_the_hood.qmd
+      - text: "From vibes to context engineering"
+        href: vibes_to_engineer.qmd
 format:
   html:
     theme: [default, brand]
@@ -28,5 +28,5 @@ format:
     css: style/style.css
     template-partials:
       - style/title-slide.html
-    multiplex:
-      url: "https://multiplex.up.railway.app/"
+    # multiplex:
+    #   url: "https://multiplex.up.railway.app/"

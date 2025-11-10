@@ -1,0 +1,99 @@
+---
+title: "From vibes to context engineering"
+subtitle: "Using LLM's effectively"
+author: Dr Sandy (Alexander) Jackson
+author-title: NIHR Doctoral Fellow, University of Southampton
+email: alexander.jackson@soton.ac.uk
+institute: University of Southampton
+date: today
+date-format: MMMM YYYY
+format:
+    revealjs:
+        slide-number: true
+        footer: 'TRIC Network Workshop'
+        navigation-mode: vertical
+        transition: slide
+        transition-speed: slow
+revealjs-plugins:
+  - pointer
+---
+
+# Have you heard about this new thing?
+
+:::{.r-stack}
+
+![](./images/chatgpt-intro.png){fig-align=center width=80% .fragment .fade-in-then-out fragment-index=1}
+
+![](./images/chat_gpt_use.png){fig-align=center width=70% .fragment fragment-index=2}
+
+:::
+
+# What's changed? {.center}
+
+# Bigger models
+
+![](./images/chatgpt-parameters-min.webp){fig-align=center width=95%}
+
+
+# More models
+
+:::{.logo-grid}
+
+::: {.logo-item}
+![](./images/logo_deepseek.svg)
+:::
+
+::: {.logo-item}
+![](./images/logo_gemini.png)
+:::
+
+::: {.logo-item}
+![](./images/logo_llama.svg)
+:::
+
+::: {.logo-item}
+![](./images/logo_mistral.svg)
+:::
+
+::: {.logo-item}
+![](./images/logo_moonshot.svg)
+:::
+
+::: {.logo-item}
+![](./images/logo-chatgpt.svg)
+:::
+
+::: {.logo-item}
+![](./images/logo-claude.png)
+:::
+
+::: {.logo-item}
+![](./images/logo-grok.svg)
+:::
+
+:::
+
+# How *we* use them
+
+![](./images/prompt_engineering.jpg){fig-align=center}
+
+# It's all about context
+
+![](./images/context.webp){fig-align=center}
+
+## Context Engineering
+
+:::{.r-stack}
+
+![](./images/mcp.jpg){fig-align=center .fragment .fade-out fragment-index=1}
+
+![](./images/types_of_context_engineering.jpg){fig-align=center .fragment fragment-index=1}
+
+:::
+
+
+# Enough from me, lets discuss it{.center}
+
+[Back to the Homepage](./index.qmd)
+
+alexander.jackson@soton.ac.uk

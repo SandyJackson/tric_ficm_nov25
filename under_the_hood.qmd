@@ -1,0 +1,272 @@
+---
+title: "Clinical Artificial Intelligence"
+subtitle: "A look under the hood"
+author: Dr Sandy (Alexander) Jackson
+author-title: NIHR Doctoral Fellow, University of Southampton
+email: alexander.jackson@soton.ac.uk
+institute: FICM Intensivists in Training Conference
+date: 11/10/2025
+date-format: MMMM YYYY
+format:
+    revealjs:
+        slide-number: true
+        footer: 'TRIC Network Workshop'
+        navigation-mode: vertical
+        transition: slide
+        transition-speed: slow
+revealjs-plugins:
+  - pointer
+---
+# Disclosures {.smaller}
+
+- Supported by an NIHR Doctoral Fellowship.
+    - *The views expressed are my own and not necessarily those of the NIHR or the Department of Health and Social Care.*
+- Medical Advisory Board and unrestricted research funding from Edwards Lifesciences/BD Advanced Patient Monitoring
+- Representative for Digital, Technology and the use of NHS Data: Royal College of Anaesthetists
+- Trustee and management committee, APEX (Altitude Physiology Expeditions)
+
+# AI is Everywhere...
+
+{{< video https://www.youtube.com/embed/-P-ein58laA?si=z2LtFhNr1yR9WpPK width="854px" height="480px" >}}
+
+# But what is AI?
+
+## {.center}
+:::: {.columns}
+
+::: {.column width="60%"}
+*"I propose to consider the question 'Can machines think?'"*
+
+        Alan Turing, 1950
+:::
+::: {.column width="30%"}
+![](images/a_turing.jpg)
+:::
+::::
+
+## You probably use it every day {.center}
+
+::: {layout-ncol=3}
+![](images/slide6_fig1.png)
+
+![](images/slide6_fig2.png){width=70%}
+
+![](images/slide6_fig3.png){width=70%}
+
+![](images/slide6_fig4.png)
+
+![](images/slide6_fig5.png)
+
+![](images/slide6_fig6.png)
+:::
+
+##  AI? Deep Learning? Machine learning? {style="font-size: 50%;"}
+![van der Meijden SL et al. Possibilities and challenges for artificial intelligence and machine learning in perioperative care. BJA Education; 2023; DOI: 10.1016/j.bjae.2023.04.003](./images/bja_ed_ai_ven.jpg)
+
+# A (quick) primer on types of machine learning {.center}
+
+## Unsupervised learning
+
+::: {.r-stack}
+
+![](./images/unsupervised_cats_dogs.png){.fragment fig-align="center" width="855px"}
+
+![](./images/endotypes_paper.png){.fragment fig-align="center" width="855px"}
+
+:::
+
+::: {.notes}
+- used stroke volume index, heart rate, cardiac index, systemic vascular resistance index, and pulse pressure variation measurements
+- myocardial depression
+- bradycardia
+- vasodilation with cardiac index increase
+- vasodilation without cardiac index increase
+- hypovolaemia
+- mixed type.
+:::
+
+## Supervised learning
+
+::: {.r-stack}
+
+![](./images/supervised_fruit.webp){.fragment fig-align="center" width="855px"}
+
+![](./images/supervised-ml.png){.fragment fig-align="center" width="875px"}
+
+:::
+
+
+
+## Down the rabbit hole...
+
+:::{.r-stack}
+
+![](./images/red-pill.jpg){.fragment height="450"}
+
+![](images/slide29_fig1.jpg){.fragment height="450"}
+
+![](images/slide29_fig2.jpeg){.fragment height="450"}
+
+![](images/slide29_fig3.PNG){.fragment height="450"}
+
+![](images/slide29_fig5.jpg){.fragment height="450"}
+
+![](images/slide29_fig6.png){.fragment height="450"}
+
+![](images/slide29_fig7.jpg){.fragment height="450"}
+
+:::
+
+# A (brief) look *'under the hood'*
+
+##
+![](./images/maths_warning.png){fig-align="center"}
+
+##
+<iframe width="1080" height="800" src="https://setosa.io/ev/ordinary-least-squares-regression/" title="OLS Visualisation"></iframe>
+
+## How do computers find the right weights?
+
+::: {.incremental}
+- Weights are the numbers we can adjust to make the model fit the data
+- They are random to begin with
+- They try and minimise a '*loss function*'
+    - Make the squares smaller!
+- Gradient descent tells them the direction and magnitude to change
+:::
+
+## Key takeaways
+
+::: {.incremental}
+- $y = m.x+c$
+- You can only change 2 things in linear regression
+- You can do an awful lot with this
+    - Original POSSUM model has 19 variables
+    - 3 'weights' in the final model
+    - Around 30 in NELA Risk Calculator
+:::
+
+
+## How do machine learning models compare? {style="font-size: 90%;"}
+
+<iframe src="https://ourworldindata.org/grapher/exponential-growth-of-parameters-in-notable-ai-systems?time=earliest..1960-06-30&country=2.0x%2Fyear+between+2010%E2%80%932025~1.2x%2Fyear+between+1950%E2%80%932010~Theseus~Deep+Blue~Perceptron+%281960%29~AlexNet~GPT-1~Transformer+%282017%29~Llama+4+Behemoth+%28preview%29&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+# The Revolution {.center}
+
+{{< video https://www.youtube.com/embed/-P-ein58laA?si=z2LtFhNr1yR9WpPK width="854px" height="480px" >}}
+
+## What does a revolution look like?
+
+::: {.r-stack}
+![](./images/revolution1.png){.fragment width="750px"}
+
+![](./images/revolution2.png){.fragment width="750px"}
+
+:::
+
+
+
+## The Revolution in healthcare
+
+::: {.r-stack}
+![](./images/health-revolution1.png){.fragment height="500px"}
+
+![](./images/health-revolution2.png){.fragment height="500px"}
+
+![](./images/health-revolution4.png){.fragment }
+
+:::
+
+## Or Evolution?
+
+![](./images/evolution.jpg){fig-align='center'}
+
+## The black box
+
+::: {.r-stack}
+
+![](./images/black_box.png){.fragment .fade-in-then-out}
+
+![](./images/tiva_formula.png){.fragment}
+
+:::
+
+::: {.notes}
+
+Schnider model - space state equation from:
+	https://www.fc.up.pt/galeno/Models/Schnider%20Model%20-%20Pro.pdf
+
+:::
+
+# Finding data in complex signals
+
+## Hidden patterns
+![](./images/retinal_gender_title.png)
+
+::: aside
+https://doi.org/10.1038/s41598-021-89743-x
+:::
+
+## A little closer to home {style="font-size: 50%"}
+
+::: {.r-stack}
+![](./images/hpi_paper.png){.fragment .fade-in-then-out fragment-index=0}
+
+![](./images/hpi_wave_analysis.png){.fragment height="550" .lightbox}
+
+![](./images/vistisen-et-al.png){.fragment height="550" }
+
+![](./images/davies-et-al.png){.fragment height="550" }
+:::
+
+::: aside
+https://doi.org/10.1097/ALN.0000000000002300
+:::
+
+# What makes a good model
+
+## Lets keep it simple
+![](images/slide26_fig1.webp){.fragment height="550"}
+
+## Reporting standards
+![](images/slide27_fig1.png)
+
+## Which one do you trust?
+:::{layout="[[1,1],[1]]"}
+
+![](images/slide28_fig1.png)
+
+![](images/slide28_fig2.jpg)
+
+![](images/slide28_fig3.jpg){fig-align="center"}
+
+:::
+
+## Everything you've learn before applies
+
+- The jargon is a tiny fraction of the paper
+- What have they ACTUALLY studied?
+    - Is it what/who I’m interested in?
+- Is it clear what the model is actually predicting or discovering?
+    - Is that what you are interested in?
+
+# Almost there... (Take-homes)
+
+## Summary
+::: {.incremental}
+- AI is a broad term.
+    - Machine learning and deep learning are more specific
+- It's not that different to covnentional statistics
+    - But the scale is difficult to comprehend
+- It ***will*** change healthcare
+    - When? Who knows
+- Be excited, be sceptical
+:::
+
+# Thank you for listening. {.center}
+
+Any questions?
+
+[Back to the Homepage](./index.qmd)
+
+alexander.jackson@soton.ac.uk
