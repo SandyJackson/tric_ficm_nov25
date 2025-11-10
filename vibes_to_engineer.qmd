@@ -18,6 +18,14 @@ revealjs-plugins:
   - pointer
 ---
 
+# Disclosures {.smaller}
+
+- Supported by an NIHR Doctoral Fellowship.
+    - *The views expressed are my own and not necessarily those of the NIHR or the Department of Health and Social Care.*
+- Medical Advisory Board and unrestricted research funding from Edwards Lifesciences/BD Advanced Patient Monitoring
+- Representative for Digital, Technology and the use of NHS Data: Royal College of Anaesthetists
+- Trustee and management committee, APEX (Altitude Physiology Expeditions)
+
 # Have you heard about this new thing?
 
 :::{.r-stack}
